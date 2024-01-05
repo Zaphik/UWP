@@ -1,0 +1,143 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net6.0</TargetFramework>
+        <RollForward>Major</RollForward>
+        <PublishReadyToRun>false</PublishReadyToRun>
+        <TieredCompilation>false</TieredCompilation>
+    </PropertyGroup>
+    <PropertyGroup>
+        <ApplicationManifest>app.manifest</ApplicationManifest>
+        <ApplicationIcon>Icon.ico</ApplicationIcon>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="MonoGame.Framework.DesktopGL" Version="3.8.1.303"/>
+        <PackageReference Include="MonoGame.Content.Builder.Task" Version="3.8.1.303"/>
+    </ItemGroup>
+    <ItemGroup>
+      <None Remove="Content\Fonts\NotFoundFont.xnb" />
+      <Content Include="Content\Fonts\NotFoundFont.xnb">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="Content\Fonts\PokemonBattleFont.xnb" />
+      <Content Include="Content\Fonts\PokemonBattleFont.xnb">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="Content\Fonts\PokemonFont.xnb" />
+      <Content Include="Content\Fonts\PokemonFont.xnb">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="Content\Textures\Battle\Backgrounds\background.xnb" />
+      <Content Include="Content\Textures\Battle\Backgrounds\background.xnb">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="Content\Textures\Battle\Gui\BattleNumberOfPokemons.xnb" />
+      <Content Include="Content\Textures\Battle\Gui\BattleNumberOfPokemons.xnb">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="Content\Textures\Battle\Gui\FemaleIcon.xnb" />
+      <Content Include="Content\Textures\Battle\Gui\FemaleIcon.xnb">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="Content\Textures\Battle\Gui\HealthBar.xnb" />
+      <Content Include="Content\Textures\Battle\Gui\HealthBar.xnb">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="Content\Textures\Battle\Gui\MaleIcon.xnb" />
+      <Content Include="Content\Textures\Battle\Gui\MaleIcon.xnb">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="Content\Textures\Battle\Gui\PlayerStatusBox.xnb" />
+      <Content Include="Content\Textures\Battle\Gui\PlayerStatusBox.xnb">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="Content\Textures\Battle\Gui\StatusPokemonBallDead.xnb" />
+      <Content Include="Content\Textures\Battle\Gui\StatusPokemonBallDead.xnb">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="Content\Textures\Battle\Gui\StatusPokemonBallNormal.xnb" />
+      <Content Include="Content\Textures\Battle\Gui\StatusPokemonBallNormal.xnb">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="Content\Textures\Battle\Gui\StatusPokemonBallStatusEffect.xnb" />
+      <Content Include="Content\Textures\Battle\Gui\StatusPokemonBallStatusEffect.xnb">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="Content\Textures\Battle\Pokeballs\pokeball_open_effect.xnb" />
+      <Content Include="Content\Textures\Battle\Pokeballs\pokeball_open_effect.xnb">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="Content\Textures\Battle\Pokeballs\pokeball_regular.xnb" />
+      <Content Include="Content\Textures\Battle\Pokeballs\pokeball_regular.xnb">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="Content\Textures\Emotions\trainer_b.xnb" />
+      <Content Include="Content\Textures\Emotions\trainer_b.xnb">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="Content\Textures\NPC\main_character.xnb" />
+      <Content Include="Content\Textures\NPC\main_character.xnb">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="Content\Textures\NPC\main_character_single.xnb" />
+      <Content Include="Content\Textures\NPC\main_character_single.xnb">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="Content\Textures\NPC\rock_trainer.xnb" />
+      <Content Include="Content\Textures\NPC\rock_trainer.xnb">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="Content\Textures\Pokemons\charmander.xnb" />
+      <Content Include="Content\Textures\Pokemons\charmander.xnb">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="Content\Textures\Pokemons\weedle_front.xnb" />
+      <Content Include="Content\Textures\Pokemons\weedle_front.xnb">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="Content\Textures\ScreenEffects\white_block.xnb" />
+      <Content Include="Content\Textures\ScreenEffects\white_block.xnb">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="Content\Textures\Tiles\main_tile.xnb" />
+      <Content Include="Content\Textures\Tiles\main_tile.xnb">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="Content\Textures\Trainers\bug_catcher.xnb" />
+      <Content Include="Content\Textures\Trainers\bug_catcher.xnb">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="Content\Textures\Trainers\trainer_back.xnb" />
+      <Content Include="Content\Textures\Trainers\trainer_back.xnb">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="Content\Textures\Trainers\trainer_back_single.xnb" />
+      <Content Include="Content\Textures\Trainers\trainer_back_single.xnb">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="Content\Textures\Windows\message_arrow.xnb" />
+      <Content Include="Content\Textures\Windows\message_arrow.xnb">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="Content\Textures\Windows\windowBattleFrame.xnb" />
+      <Content Include="Content\Textures\Windows\windowBattleFrame.xnb">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="Content\Textures\Windows\windowframe.xnb" />
+      <Content Include="Content\Textures\Windows\windowframe.xnb">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="Content\Textures\NotfoundTexture.xnb" />
+      <Content Include="Content\Textures\NotfoundTexture.xnb">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="Content\Textures\pi_test.xnb" />
+      <Content Include="Content\Textures\pi_test.xnb">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+    </ItemGroup>
+    <Target Name="RestoreDotnetTools" BeforeTargets="Restore">
+        <Message Text="Restoring dotnet tools" Importance="High"/>
+        <Exec Command="dotnet tool restore"/>
+    </Target>
+</Project>
